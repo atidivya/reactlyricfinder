@@ -40,8 +40,6 @@ class Lyrics extends Component {
   render() {
     
     const { track, lyrics } = this.state;
-
-    //console.log(track);
     if(track === undefined || lyrics === undefined ||Object.keys(track).length === 0 || Object.keys(lyrics).length === 0){
         return <Spinner />
     } else {
